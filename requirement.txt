@@ -1,6 +1,6 @@
 streamlit
 langchain
-firebase_admin
+firebase-admin
 PyPDF2
 langchain_google_genai
 google-generativeai
