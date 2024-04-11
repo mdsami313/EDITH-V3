@@ -1,0 +1,9 @@
+streamlit
+langchain
+firebase_admin
+PyPDF2
+langchain_google_genai
+google-generativeai
+langchain_community
+gtts
+huggingface_hub
