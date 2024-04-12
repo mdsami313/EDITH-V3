@@ -82,17 +82,16 @@ def main():
 
     st.image("hero-animation.gif")
 
-if __name__=='__main__':
-    try:
-        if not firebase_admin._apps:
-            cred = credentials.Certificate('C:\\Users\\samis\\OneDrive\\Desktop\\Final Year Project\\document-chatbot-8b13f-6877f0069a1d.json')
-            default_app = firebase_admin.initialize_app(cred)
-    except:
-        pass
-    if not st.session_state.signout:
-        hide_sidebar()
-        
-    if st.session_state.signout:
-        main()
-        with st.sidebar:
-            st.button('Sign out', on_click=t)
+try:
+    if not firebase_admin._apps:
+        cred = credentials.Certificate('document-chatbot-8b13f-6877f0069a1d.json')
+        default_app = firebase_admin.initialize_app(cred)
+except:
+    pass
+if not st.session_state.signout:
+    hide_sidebar()
+    
+if st.session_state.signout:
+    main()
+    with st.sidebar:
+        st.button('Sign out', on_click=t)
