@@ -52,7 +52,7 @@ model = "models/text-bison-001"
 
 st.title("EDITH")
 
-drawable_synonyms = {"image,", "picture,", "photo,","images,", "image", "images"}
+drawable_synonyms = {"image,", "picture,", "photo,","images,", "image", "images", "image.", "images."}
 is_image_query = False
 
 def img_to_bytes(img_path):
